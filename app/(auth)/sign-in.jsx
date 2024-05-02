@@ -17,6 +17,7 @@ const SignIn = () => {
       <ScrollView contentContainerStyle={{height: '100%'}}>
         <View className="flex justify-center w-full h-full">
           <Text className="self-center font-bold text-2xl">SignIn</Text>
+          
           <FormField 
           title={'Email'}
           value={form.email}
@@ -29,14 +30,13 @@ const SignIn = () => {
           keyboardType = 'email-adress'/>
 
           <CustomBtn title={'Sign In'} btnStyle={'py-3 m-4 rounded'}/>
-          {/* <Link href="/sign-up" className='self-center text-blue-500'>Create a new account</Link> */}
+          <Link href="/sign-up" className='self-center text-blue-500'>Create a new account</Link>
           <Text className='self-center py-4'>or</Text>
           <View className="flex flex-row justify-center gap-5">
             <FontAwesome5 name="google" size={30} color="black" />
             <FontAwesome5 name="facebook" size={30} color="black"/>
           </View>
         </View>
-        
       </ScrollView>
       <StatusBar style="auto" />
     </View>

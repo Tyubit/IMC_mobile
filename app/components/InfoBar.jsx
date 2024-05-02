@@ -1,0 +1,17 @@
+import { View, Text } from 'react-native'
+import React from 'react'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+const InfoBar = () => {
+  return (
+    <>
+    <View className="">
+        <FontAwesome5 name="heart" size={30} color="black"/>
+        <FontAwesome5 name="bolt" size={30} color="black"/>
+        <FontAwesome5 name="hamburger" size={30} color="black"/>
+        <FontAwesome5 name="mug-hot" size={30} color="black"/>
+    </View>
+    </>
+  )
+}
+
+export default InfoBar

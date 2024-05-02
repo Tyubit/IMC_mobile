@@ -31,9 +31,14 @@ const SignUp = () => {
           value={form.password}
           handleChangeText={(e) => setForm({...form, email: e})}
           />
+          <FormField 
+          title={'Confirm Password'}
+          value={form.password}
+          handleChangeText={(e) => setForm({...form, email: e})}
+          />
 
           <CustomBtn title={'Sign In'} btnStyle={'py-3 m-4 rounded'}/>
-          <Link href="/sign-up" className='self-center text-blue-500'>Create a new account</Link>
+          <Link href="/sign-in" className='self-center text-blue-500'>Have an accaunt already?</Link>
           <Text className='self-center py-4'>or</Text>
           <View className="flex flex-row justify-center gap-5">
             <FontAwesome5 name="google" size={30} color="black" />

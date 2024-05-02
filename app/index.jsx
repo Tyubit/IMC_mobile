@@ -14,6 +14,10 @@ const index = () => {
           <TouchableOpacity onPress={() => router.push('/sign-in')}>
             <Text>Go to SignIn</Text>
           </TouchableOpacity>
+          
+          <TouchableOpacity onPress={() => router.push('/home')}>
+            <Text>Home</Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>

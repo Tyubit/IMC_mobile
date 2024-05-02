@@ -1,11 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Stack } from 'expo-router'
 
 const TabsLayout = () => {
   return (
-    <View>
-      <Text>TabsLayout</Text>
-    </View>
+    <>
+      <Stack>
+        <Stack.Screen 
+        name="home" 
+        options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+        name="profile" 
+        options={{ headerShown: false }}
+        />
+      </Stack>
+    </>  
   )
 }
 
