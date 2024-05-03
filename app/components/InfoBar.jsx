@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
-const InfoBar = () => {
+const InfoBar = (style) => {
   return (
     <>
-    <View className="">
+    <View className={`${style}`}>
         <FontAwesome5 name="heart" size={30} color="black"/>
         <FontAwesome5 name="bolt" size={30} color="black"/>
         <FontAwesome5 name="hamburger" size={30} color="black"/>
